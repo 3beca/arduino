@@ -10,6 +10,6 @@ Arduino GND -> Relay Vin-
 ```
 
 ## Arduino images
-![Arduino Rele Off](2relay-arduino-releon.png)
+![Arduino Rele Off](https://github.com/3beca/arduino/blob/main/2relay-arduino-releoff.jpeg)
 
-![Arduino Rele On](2relay-arduino-releon.png)
+![Arduino Rele On](https://github.com/3beca/arduino/blob/main/2relay-arduino-releon.jpeg)
