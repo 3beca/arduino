@@ -11,13 +11,13 @@
 SoftwareSerial Relay(2, 3); // RX, TX
 
 // Comandos a ejecutar por el relé
-// Comando para cerrar Rele
+// Comando para cerrar Rele 1
 byte relON[]  = {0xA0, 0x01, 0x01, 0xA2};
-// Comando para abrir Rele
+// Comando para abrir Rele 1
 byte relOFF[] = {0xA0, 0x01, 0x00, 0xA1};
-// Comando para cerrar Rele
+// Comando para cerrar Rele 2
 byte rel2ON[]  = {0xA0, 0x02, 0x01, 0xA3};
-// Comando para abrir Rele
+// Comando para abrir Rele 2
 byte rel2OFF[] = {0xA0, 0x02, 0x00, 0xA2};
 
 void setup ()
@@ -68,7 +68,7 @@ void loop() {
   // Esperamos los comandos del monitor serie
   if ( Serial.available () )
   {
-    //
+    // Comando del monitor serie
     String req = Serial.readStringUntil ('\r');
     Relay.println(req);
     // Comprobamos los comandos del monitor serie
